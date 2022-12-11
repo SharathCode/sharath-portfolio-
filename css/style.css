@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+
+:root{
+    --belle-family:'La Belle Aurore', cursive;
+    --poppins-family:'Poppins', sans-serif;
+}
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    font-family: var(--poppins-family);
+}
+
+.background_man{
+    background-image: url(/img/BANNER.jpg);
+background-repeat: no-repeat;
+height: 100vh;
+background-size: cover;
+}
+
+.container{
+    width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/********Header********/
+
+header{
+    position: relative;
+    background-color: initial;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header .logo a{
+    font-size: 40px;
+    text-decoration: none;
+    color: red;
+    font-family: var(--belle-family);
+}
+header .logo a span{
+    color: black;
+    font-family: var(--belle-family)
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/********Header:hover********/
+
+nav a:hover{
+
+    border-bottom: 3px solid orange;
+    border-top: 3px solid orange;
+    padding: 0;margin: 0;
+}
+
+/********HERO********/
+
+.hero{
+    position: relative;
+    margin-top: 90px;
+}
+
+.hero .text_hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hero .text_hero p{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.hero .text_hero p span{
+    color: red;
+}
+
+.hero .text_hero h1{
+    font-size: 60px;
+    font-weight: 500;
+}
+
+.text_hero h1 span{
+    color: red;
+}
+
+.text_hero h3{
+    background-color: red;
+    width: 350px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.text_hero input{
+    text-align: center;
+    cursor: pointer;
+    padding: 10px 50px;
+    margin-top: 60px;
+    font-size: 18px;
+   background-color: red;
+   outline: none;
+   border: none;
+   color: white;
+   transition: 0.6s;
+}
+
+.text_hero input:hover{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+}
+
+
+/** About***/
+
+.about{
+    position: relative;
+    width: 1110px;
+    margin: auto;
+    background: inherit;
+      backdrop-filter: blur(10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.mt{
+    margin-top: 90px;
+}
+
+.about .img_about img{
+    width: 60%;
+    height: 50vh;
+}
+
+.about .img_about{
+    width: 100%;
+    height: 70vh;
+    margin-left: 90px;
+    padding-top: 80px;
+}
+
+.about .text_about{
+    width: 100%;
+    margin-right: 120px;
+}
+
+.about .text_about h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.about  .text_about h1 span{
+    color: red;
+    position: relative;
+    font-size: 36px;
+}
+
+.about .text_about h1 span::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 70%;
+}
+
+.about .text_about p{
+    font-size: 18px;
+    color: black;
+}
+
+.about .text_about p span , .about .text_about h2 span{
+    color: red;
+}
+
+.about .text_about h2{
+    margin-top: 20px;
+    position: relative;
+    font-weight: 500;
+}
+
+.about .text_about h2::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    top: 70%;
+}
+
+.about .text_about i{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px 0;
+    color: red;
+
+}
+
+/***Education***/
+
+.education{
+    position: relative;
+    margin-top: 90px;
+}
+
+.education h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    position: relative;
+    font-weight: 500;
+}
+
+.education h1 span{
+    color: red;
+}
+
+.education h1 span::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 70%;
+}
+
+.education .boxs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.education .boxs .box{
+    width: 27rem;
+   margin-top: 20px;
+   padding-left: 50px;
+    border-left:2px solid #222;
+    position: relative;
+}
+
+
+.education .boxs .box span{
+    font-size: 1.3rem;
+    background: #222;
+    color: #fff;
+    border-radius: 5rem;
+    padding: 10px 20px;
+}
+
+.education .boxs .box h3{
+    font-size: 24px;
+    color: #222;
+    padding-top: 40px;
+}
+.education .boxs .box p{
+    font-size: 16px;
+    color: #222;
+    padding: 20px 0;
+}
+
+.education .boxs .box i{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #222;
+    background-color: yellow;
+}
+
+/***Skills****/
+
+
+.skills{
+  width: 100%;
+  max-width: 600px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.skills h2{
+    font-size: 50px;
+    font-weight: 500;
+    position: relative;
+}
+
+.skills h2 span{
+    color: red;
+}
+
+.skills h2 span::after{
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    top: 70%;
+}
+
+.skill-name{
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+  margin-top: 30px;
+}
+
+.skill{
+    margin-top: 30px;
+}
+
+.skill-per{
+  height: 14px;
+  background: #d13639;
+  border-radius: 3px;
+  position: relative;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -35px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f1f1f1;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+
+
+
+
+/* Contact**/
+
+.contact{
+  background: #fff;
+  width: 800px;
+  padding: 50px;
+  margin: auto;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+ .mt{
+   margin-top: 90px;
+}
+.contact .text{
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact form{
+  padding: 30px 0 0 0;
+}
+.contact form .form-row{
+  display: flex;
+  margin: 32px 0;
+}
+form .form-row .input-data{
+  width: 100%;
+  height: 40px;
+  margin: 0 20px;
+  position: relative;
+}
+form .form-row .textarea{
+  height: 70px;
+}
+.input-data input,
+.textarea textarea{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0,0,0, 0.12);
+}
+.input-data input:focus ~ label, .textarea textarea:focus ~ label,
+.input-data input:valid ~ label, .textarea textarea:valid ~ label{
+  transform: translateY(-20px);
+  font-size: 14px;
+  color: #3498db;
+}
+.textarea textarea{
+  resize: none;
+  padding-top: 10px;
+}
+.input-data label{
+  position: absolute;
+  pointer-events: none;
+  bottom: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.textarea label{
+  width: 100%;
+  bottom: 40px;
+  background: #fff;
+}
+.input-data .underline{
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.input-data .underline:before{
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: #3498db;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.submit-btn .input-data{
+  overflow: hidden;
+  height: 45px!important;
+  width: 25%!important;
+}
+.submit-btn .input-data .inner{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: -webkit-linear-gradient(right, #56d8e4, #9f01ea, #56d8e4, #9f01ea);
+  transition: all 0.4s;
+}
+.submit-btn .input-data:hover .inner{
+  left: 0;
+}
+.submit-btn .input-data input{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.submit-btn{
+    padding-top: 30px;
+}
+
